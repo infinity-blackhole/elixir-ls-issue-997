@@ -1,0 +1,26 @@
+{
+  "folders": [{ "name": "foo", "path": "." }],
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "mix_task",
+        "name": "Launch Foo",
+        "request": "launch",
+        "task": "run",
+        "taskArgs": ["--no-halt"],
+        "env": {
+          "ELS_ELIXIR_OPTS": "--sname login"
+        },
+        "projectDir": "${workspaceRoot:foo}"
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Compound",
+        "configurations": ["Launch Foo"]
+      }
+    ]
+  }
+}
+
