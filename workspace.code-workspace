@@ -14,12 +14,6 @@
         },
         "projectDir": "${workspaceRoot:foo}"
       }
-    ],
-    "compounds": [
-      {
-        "name": "Compound",
-        "configurations": ["Launch Foo"]
-      }
     ]
   }
 }
